@@ -1,0 +1,128 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f2edf7; /* lavender */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body stretches to at least the height of the viewport */
+  }
+  
+  header {
+    background-color: #2D9596; /* medium violet red */
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a.active {
+    font-weight: bold;
+  }
+  
+  main {
+    flex: 1; /* Takes up remaining vertical space */
+    padding: 2rem;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+    color: #2D9596; /* medium violet red */
+  }
+  
+  #upload-section {
+    margin-bottom: 2rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #upload-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  #upload-form input[type="file"] {
+    display: none; /* Hide the default file input */
+  }
+  
+  .custom-upload {
+    background-color: #2D9596; /* medium violet red */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 1rem; /* Add margin to separate from the button */
+  }
+  
+  .custom-upload:hover {
+    background-color: #265073; /* dark slate blue */
+  }
+  
+  #upload-form button {
+    background-color: #2D9596; /* medium violet red */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #upload-form button:hover {
+    background-color: #265073; /* dark slate blue */
+  }
+  
+  #analysis-section {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  /* Button Styles */
+#analyze-button {
+    background-color: #2D9596; /* medium violet red */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem; /* Add some space between the button and the analysis results */
+  }
+  
+  #analyze-button:hover {
+    background-color: #265073; /* dark slate blue */
+  }
+  
+  
+  footer {
+    background-color: #2D9596; /* medium violet red */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto; /* Pushes the footer to the bottom of the viewport */
+  }
+  

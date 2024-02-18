@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InvoiceIQ</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: white;
+      color: #265073;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      text-align: left;
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    .btn-container {
+      margin-top: 20px;
+    }
+    .btn-primary, .btn-analyze {
+      background-color: #2D9596;
+      border-color: #2D9596;
+    }
+    footer {
+      text-align: center;
+      background-color: #265073;
+      color: white;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    header {
+      background-color: #265073;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to InvoiceIQ</h1>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2>Upload or Submit Your Invoices</h2>
+    <div class="btn-container">
+      <label for="fileInput" class="btn btn-primary">Upload Invoice</label>
+      <input type="file" id="fileInput" style="display: none;">
+      <button id="submitInvoiceBtn" class="btn btn-primary">Submit Invoice</button>
+      <a href="analyze.html" class="btn btn-analyze">Analyze</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 InvoiceIQ. All rights reserved.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // JavaScript to handle file upload and button clicks
+    document.getElementById('submitInvoiceBtn').addEventListener('click', function() {
+      alert('Invoice submitted successfully!');
+    });
+  </script>
+
+</body>
+</html>
